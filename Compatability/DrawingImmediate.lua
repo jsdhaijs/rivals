@@ -1,4 +1,4 @@
-local BetterDrawing = game : HttpGet( "https://raw.githubusercontent.com/dementiaenjoyer/Better-Drawing/refs/heads/main/Main.lua" ); do
+local BetterDrawing = game : HttpGet( "https://raw.githubusercontent.com/jsdhaijs/rivals/refs/heads/main/Compatability/Better-Drawing" ); do
     getgenv( ).hookfunction = ( hookfunction or 1 );
 	getgenv( ).cleardrawcache = nil;
     getgenv( ).IGNORE_HOOK = true;
