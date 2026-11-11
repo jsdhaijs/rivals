@@ -89,8 +89,9 @@ const CoreGui = ( RunService : IsStudio( ) and Players.LocalPlayer.PlayerGui ) o
 end ) )( );
 
 -- Imports
-const CacheObject = LoadString( HttpGet( Game, "https://raw.githubusercontent.com/dementiaenjoyer/Roblox-CacheObject/refs/heads/main/Main.lua" ) )( );
-const LuraphSDK = LoadString( HttpGet( Game, "https://raw.githubusercontent.com/Stefanuk12/macrosdk/refs/heads/main/luraphsdk.lua" ) )( );
+-- Imports
+const CacheObject = LoadString( HttpGet( Game, "https://raw.githubusercontent.com/jsdhaijs/rivals/refs/heads/main/Compatability/Roblox-CacheObject.lua" ) )( );
+const LuraphSDK = LoadString( HttpGet( Game, "https://raw.githubusercontent.com/jsdhaijs/rivals/refs/heads/main/Compatability/luraphsdk.lua" ) )( );
 
 const ImportedAssets = { }; do
 	const function GetAsset( Name, URL )
