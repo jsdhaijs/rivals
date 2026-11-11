@@ -19,7 +19,7 @@ end
 -- =========================================================
 
 local ScannerQuery = ".DoorBarricade, BasePart:has(> .SoftWall), BasePart:has([$Health]), BasePart[$Material], BasePart[$Color], BasePart[$Vertical], #WallPart:has(#Breakable), BasePart[$Weak = true]";
-const Directory = "rivals/op1";
+const Directory = "rivals/op1_v2";
 
 
 const GetCustomAsset = getcustomasset;
