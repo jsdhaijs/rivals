@@ -17,7 +17,6 @@ do
 	end
 end
 -- =========================================================
--- =========================================================
 
 local ScannerQuery = ".DoorBarricade, BasePart:has(> .SoftWall), BasePart:has([$Health]), BasePart[$Material], BasePart[$Color], BasePart[$Vertical], #WallPart:has(#Breakable), BasePart[$Weak = true]";
 const Directory = "rivals/op1";
