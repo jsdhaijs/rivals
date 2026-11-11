@@ -1,4 +1,4 @@
-
+local LPH_NO_VIRTUALIZE = LPH_NO_VIRTUALIZE or function(f) return f end
 
 	-- 2) Load DrawingImmediate shim if not already present
 	local already = (getgenv and getgenv().DrawingImmediate) or DrawingImmediate
