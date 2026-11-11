@@ -1,8 +1,6 @@
-local LPH_NO_VIRTUALIZE = LPH_NO_VIRTUALIZE or function(f) return f end
+local LPH_NO_VIRTUALIZE = function(f) return f end
 
--- === bootstrap: FFlag + DrawingImmediate shim, no rejoin ===
 do
-	-- 2) Load DrawingImmediate shim if not already present
 	local already = (getgenv and getgenv().DrawingImmediate) or DrawingImmediate
 	if not already then
 		local ok, shim = pcall(function()
@@ -14,10 +12,11 @@ do
 			getgenv().DrawingImmediate = shim
 			DrawingImmediate = shim
 		else
-			warn("[rivals] failed to load DrawingImmediate shim; the cheat will error at the bottom")
+			warn("[rivals] failed to load DrawingImmediate shim")
 		end
 	end
 end
+-- =========================================================
 -- =========================================================
 
 local ScannerQuery = ".DoorBarricade, BasePart:has(> .SoftWall), BasePart:has([$Health]), BasePart[$Material], BasePart[$Color], BasePart[$Vertical], #WallPart:has(#Breakable), BasePart[$Weak = true]";
